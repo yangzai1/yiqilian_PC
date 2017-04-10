@@ -1,0 +1,302 @@
+@charset "utf-8";
+*{padding:0px; margin:0px;}
+body{ font-size:14px; border:0px; padding:0px; margin:0px auto; width:100%; font-family:"微软雅黑","黑体","Helvetica","Microsoft Yahei","sans-self"; }
+li,img,p,div,h1,h2,a,span,h3,h4,h5{ padding:0px; margin:0px; border:0px;}
+ul,ol{ list-style:none;}a{ text-decoration:none; border:0px;cursor:pointer;color:#000;}
+em,i{font-style:normal}input{outline:none;}img{display:block;}
+a{outline: none;}a:active{star:expression(this.onFocus=this.blur());}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, input, select, textarea, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+
+/**dengru **/
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   /* color: #ececec;  font-weight: 300;*/
+ 
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    /*color: #ececec;font-weight: 300;*/
+}
+
+/*input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #ececec;font-weight: 300;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ececec;font-weight: 300;
+}*/
+body{
+	text-rendering: optimizeLegibility !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
+.login_main{
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	position: static;
+}
+.login_box{
+	overflow: hidden;
+	min-height: 100%;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	background: url(../img/1.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.signin-header h2{
+	text-align:center;
+	padding:15% 0 20px 0;
+	color:#fafafa;
+	font-size:36px;	
+	font-weight: 300;
+}
+.signin-header h2.h_up{
+	padding:7% 0 20px 0;
+}
+.signin-body{
+	padding: 20px 10px;
+}
+.container {
+    width: 700px;
+    margin:0 auto;
+    background:url(../img/login_bg.png) repeat;
+    border-radius: 20px;
+    padding:35px 35px 15px 35px;
+}
+
+.form-container {
+    width: 420px;
+    margin: 10px auto;
+}
+.form-container form{
+	width: 420px;
+}
+.form-group{
+	margin:0;
+}
+.form_up{
+	margin-top:30px;
+}
+.input-group {
+    display: table;
+    border-collapse: separate;
+    position: relative;
+    width:100%;
+}
+
+.input-group {
+    padding: 5px 0 5px 5px;
+}
+.input-group-addon{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color:#F9F9F9;
+    border-radius: 2px;
+    width:70px;
+	white-space: nowrap;
+	vertical-align: middle;
+	float:left;
+	line-height:32px;
+}
+.input-group-addon span{
+	letter-spacing: 15px;
+}
+.input-group-addon font{
+	padding:0 7px;
+}
+.form-control,.input-group .form-c{
+    color: #aaa;
+    font-weight: 300;
+    background: 0 0;
+    height: 20px;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 12px;
+	border:1px solid #b6b7bc;
+	background:#fff;
+	border-radius: 5px;
+ *+line-height: 20px;
+ 	line-height: 20px\9;
+	vertical-align:middle;
+  }
+.form-control ,.input-group .form-c{
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 298px;
+    margin-bottom: 0;
+}
+.btn-lg {
+	display: block;
+    padding: 5px 0;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    /**文字不被选中***/
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #5b90bf;
+    border-color: #4984b8;
+}
+.text-right {
+    margin: 15px 0;
+    text-align: right;
+    
+}
+.divider-xl {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text-right,.text-right a{
+	color:#5992c5;
+}
+.btn-primary:hover{
+	background:#4177a6;
+	border-color: #37648c;	
+}
+.setion,.setion_end{
+	height: 20px;
+    padding:5px 10px;
+    line-height: 20px;
+    display: inline-block;
+    background:#5b90bf;
+    color:#fff;
+    width:98px;
+    text-align: center;
+    cursor: pointer;
+    font-size:12px;
+}
+.input-group .input-lg{
+	width:163px;
+}
+.setion_end{display:none;}
+.txm,.txm img{
+	width:117px;
+	height:32px;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.xieyi{
+	color:#BF616A;
+	line-height:20px;
+	padding-left:70px;
+}
+.check{
+	vertical-align: middle;
+	width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+.login_titl{
+	color:#E6E8EA;
+	border-bottom:1px solid #C1CDD2;
+	padding-bottom:5px;
+	margin-bottom:20px;
+	overflow:hidden;
+	
+}
+.login_titl p{
+	display:table-cell;      /*按照单元格的样式显示元素*/
+	vertical-align:bottom;
+	float:left;
+	margin-top:15px;
+}
+.login_titl a{
+	color:#4984b8;
+}
+/*.input-group em{
+	color: #f00;
+  line-height: 42px;
+  margin:0 4px;
+  *+margin:0 2px;
+  margin:0 2px\9;
+  vertical-align: middle;
+}*/
+.login_b{
+	font-size:16px;
+	padding-left:143px;
+}
+.login_titl span{
+	display:inline-block;
+	float:right;
+	line-height:45px;
+}
+.logo_m{
+	margin-left:10px;
+	font-size:16px;
+}
+.input-group em{
+	width:16px;
+	height:16px;
+	display:inline-block;
+	background:url(../img/register.png) no-repeat;
+	margin-top:5px;
+}
+.input-group em.btx{
+	background-position:-23px 0;
+	margin-left:3px;
+}
+.input-group em.zq{
+	background-position:-48px 0;	
+	margin-left:3px;
+}
+#agreetip {
+    width: 420px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+    visibility: hidden;
+}
+#tipicon {
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    background:url(../img/register.png) no-repeat -72px 0px;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+#tiptext {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #F9F9F9;
+}
+.kong{padding:10px;}
+.header_img,.header_img img{
+	width:70px;
+	height:70px;
+	margin:0 auto;
+	border-radius: 50%;
+	margin-top:12%;
+}
+.login_titl span img{
+	float:left;
+}
